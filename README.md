@@ -1,16 +1,21 @@
 # zo_collection_animation
+[![pub package](https://img.shields.io/pub/v/zo_collection_animation.svg)](https://pub.dev/packages/zo_collection_animation)
+[![pub points](https://img.shields.io/pub/points/zo_collection_animation?color=2E8B57&label=pub%20points)](https://pub.dev/packages/zo_collection_animation)
+[![License: MIT](https://img.shields.io/badge/license-MIT-purple.svg)](https://opensource.org/licenses/MIT)
 
-A lightweight Flutter package to create smooth "collect" animations — perfect for gamification, reward systems, add to cart . Animate widgets (like coins, stars, or points) from one widget to another with customizable effects.
+A lightweight Flutter package to create smooth "collect" animations — perfect for gamification, reward systems, add to cart . Animate any widget (like coins, stars, or points) from one widget to another.
+
+<p align="center">
+  <img 
+    src="https://github.com/user-attachments/assets/0e3f3314-0b66-4bd9-81e8-6355ea8b55f0"/>
+</p>
 
 ## Getting started
 
 First, add `zo_collection_animation` as a dependency in your pubspec.yaml file.
 
 ```dart
-dependencies:
-  flutter:
-    sdk: flutter
-  zo_collection_animation: ^[version]
+  zo_collection_animation: ^0.0.1
 ```
 
 ## Import the package
@@ -21,13 +26,13 @@ import 'package:zo_collection_animation/zo_collection_animation.dart'
 
 # Usage
 
-**1. Create Global Key**
+### **Create Global Key**
 
 ```dart
 final GlobalKey _coinDestKey = GlobalKey();
 ```
 
-**2.Wrap your source widget with `ZoCollectionSource`**.
+### **Wrap your source widget with `ZoCollectionSource`**.
 
 ```dart
 ZoCollectionSource(
@@ -63,7 +68,7 @@ ZoCollectionSource(
 
 ```
 
-**3. Wrap your destination widget with `ZoCollectionDestination`**.
+### **Wrap your destination widget with `ZoCollectionDestination`**.
 
 ```dart
 ZoCollectionDestination(

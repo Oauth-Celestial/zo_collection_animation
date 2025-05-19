@@ -1,7 +1,7 @@
 name: zo_collection_animation
-description: "A new Flutter package project."
+description: "A lightweight Flutter package to create smooth collect animations for coins carts"
 version: 0.0.1
-
+repository: https://github.com/Oauth-Celestial/zo_collection_animation
 environment:
   sdk: ^3.7.0
   flutter: ">=1.17.0"

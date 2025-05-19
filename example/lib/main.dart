@@ -42,9 +42,8 @@ class _MyHomePageState extends State<MyHomePage> {
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 16),
-            child: ZoDestination(
+            child: ZoCollectionDestination(
               key: _coinDestKey,
-              onCoinArrived: () {}, // Optional, already handled in emitter
               child: Row(
                 children: [
                   const Icon(Icons.monetization_on, color: Colors.amber),
@@ -65,12 +64,12 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Builder(
           builder: (context) {
-            return ZoSource(
+            return ZoCollectionSource(
               destinationKey: _coinDestKey,
-              collectionWidget: Container(
-                width: 100,
-                height: 100,
-                color: Colors.red,
+              count: 5,
+              collectionWidget: Icon(
+                Icons.monetization_on,
+                color: Colors.amber,
               ),
               onAnimationComplete: () {
                 setState(() {

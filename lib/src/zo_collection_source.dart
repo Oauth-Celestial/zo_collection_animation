@@ -62,7 +62,9 @@ class ZoCollectionSource extends StatelessWidget {
       start: startPosition,
       end: endPosition,
       count: count ?? 1,
-      onAnimationFinised: onAnimationComplete,
+      animationType: ZoCollectAnimationType.zigzag,
+      onAnimationFinished: onAnimationComplete,
+
       collectionWidget: collectionWidget,
       animationCurve: animationCurve,
       animationDuration: animationDuration,
